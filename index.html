@@ -1,111 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.arrow {
-  font-size: 40px;
-  color: white;
-  text-decoration: none;
-  animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
-}
-</style>
-
-
   <title>Digital India 2047</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f2f2f2;
-    }
-
-    header {
-      background: #003366;
+      height: 100vh;
+      background: linear-gradient(to bottom, #003366, #0055a5);
       color: white;
-      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       text-align: center;
     }
 
-    nav {
-      background: #0055a5;
-      padding: 10px;
-      text-align: center;
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
     }
 
-    nav a {
+    p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    /* Arrow button */
+    .arrow {
+      font-size: 40px;
       color: white;
-      margin: 0 10px;
       text-decoration: none;
+      background: #0077ff;
+      padding: 10px 20px;
+      border-radius: 50%;
+      transition: background 0.3s;
+      animation: bounce 1s infinite;
     }
 
-    section {
-      padding: 40px;
-      text-align: center;
+    .arrow:hover {
+      background: #00aaff;
     }
 
-    h2 {
-      color: #003366;
-    }
-
-    footer {
-      background: #003366;
-      color: white;
-      padding: 15px;
-      text-align: center;
+    /* Bounce animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Digital India 2047</h1>
-    <p>100 Years of Independence, Towards a Digital Future</p>
-  </header>
+  <h1>Welcome to Digital India 2047</h1>
+  <p>Shaping the future with technology and innovation</p>
 
-  <nav>
-    <a href="#vision">Vision</a>
-    <a href="#initiatives">Initiatives</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="vision">
-    <h2>Our Vision</h2>
-    <p>By 2047, India will be a fully digital nation where every citizen has access to technology, education, and healthcare.</p>
-  </section>
-
-  <section id="initiatives">
-    <h2>Key Initiatives</h2>
-    <p>✔ Smart Cities</p>
-    <p>✔ Digital Education for All</p>
-    <p>✔ AI-powered Healthcare</p>
-    <p>✔ Green Energy and Technology</p>
-  </section>
-
-  <section id="contact">
-    <h2>Get Involved</h2>
-    <p>Email: contact@digitalindia2047.gov.in</p>
-    <p>Phone: 1800-2047-INDIA</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2047 Digital India. All Rights Reserved.</p>
-  </footer>
-<h1>Welcome to Digital India 2047</h1>
-<p>Shaping the future with technology and innovation</p>
-
-<!-- Arrow button linking to next page -->
-<a href="about.html" class="arrow">&#8595;</a> 
-
-</body>
-</html>
-
+  <!-- Arrow button linking to About page -->
+  <a href="about.html" class="arrow">&#8595;</a>
 
 </body>
 </html>
